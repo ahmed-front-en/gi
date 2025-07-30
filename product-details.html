@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunFlex - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="products.html" class="active" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details-section">
+            <div class="container">
+                <div class="product-details-layout">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img src="images/shoe1-main.png" alt="Main product image" id="main-product-image" style="background-color:#eee;">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/shoe1-thumb1.png" alt="Product thumbnail 1" class="active" style="background-color:#eee;">
+                            <img src="images/shoe1-thumb2.png" alt="Product thumbnail 2" style="background-color:#eee;">
+                            <img src="images/shoe1-thumb3.png" alt="Product thumbnail 3" style="background-color:#eee;">
+                            <img src="images/shoe1-thumb4.png" alt="Product thumbnail 4" style="background-color:#eee;">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 class="product-title">FlexStride 3</h1>
+                        <div class="product-rating">
+                            <span>★★★★☆</span>
+                            <a href="#reviews" data-lang="read_reviews">(12 Reviews)</a>
+                        </div>
+                        <p class="product-price-details">$120.00</p>
+                        <p class="product-description" data-lang="product_desc_1">The FlexStride 3 is engineered for maximum comfort and responsiveness. Featuring a lightweight mesh upper and our signature cushioning technology, it's perfect for both daily runs and competitive races.</p>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <h4 data-lang="color">Color</h4>
+                                <div class="color-selector">
+                                    <span class="color-option active" style="background-color: #0071e3;" title="Blue"></span>
+                                    <span class="color-option" style="background-color: #333;" title="Black"></span>
+                                    <span class="color-option" style="background-color: #e3e3e3;" title="White"></span>
+                                </div>
+                            </div>
+                             <div class="option-group">
+                                <h4 data-lang="size">Size</h4>
+                                <div class="size-selector">
+                                    <span>7</span><span>8</span><span class="active">9</span><span>10</span><span>11</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button>-</button>
+                                <input type="text" value="1">
+                                <button>+</button>
+                            </div>
+                            <button class="btn btn-primary" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="product-reviews-section">
+            <div class="container">
+                <h2 class="section-title" data-lang="reviews">Customer Reviews</h2>
+                <div class="review-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">John D.</span>
+                            <span class="review-rating">★★★★★</span>
+                        </div>
+                        <p class="review-text">Absolutely love these shoes! So comfortable and stylish. I wear them for everything.</p>
+                    </div>
+                     <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">Sarah K.</span>
+                            <span class="review-rating">★★★★☆</span>
+                        </div>
+                        <p class="review-text">Great for running, very supportive. Wish they came in more colors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

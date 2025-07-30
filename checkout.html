@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunFlex - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="products.html" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="checkout">Checkout</h1>
+            </div>
+        </section>
+
+        <section class="checkout-section">
+            <div class="container">
+                <div class="checkout-layout">
+                    <div class="checkout-form">
+                        <form id="checkout-form">
+                            <h3 data-lang="shipping_address">Shipping Address</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstname" data-lang="first_name">First Name</label>
+                                    <input type="text" id="firstname" name="firstname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" data-lang="last_name">Last Name</label>
+                                    <input type="text" id="lastname" name="lastname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address" data-lang="address">Address</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city" data-lang="city">City</label>
+                                    <input type="text" id="city" name="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip" data-lang="zip_code">ZIP Code</label>
+                                    <input type="text" id="zip" name="zip">
+                                </div>
+                            </div>
+
+                            <h3 data-lang="payment_details">Payment Details</h3>
+                            <div class="form-group">
+                                <label for="card-number" data-lang="card_number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number">
+                            </div>
+                             <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry" data-lang="expiry_date">Expiry Date</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvc" data-lang="cvc">CVC</label>
+                                    <input type="text" id="cvc" name="cvc">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3 data-lang="order_summary">Order Summary</h3>
+                        <div class="summary-item">
+                            <span class="summary-item-name">FlexStride 3 (x1)</span>
+                            <span class="summary-item-price">$120.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-item-name">Court Ace (x2)</span>
+                            <span class="summary-item-price">$270.00</span>
+                        </div>
+                        <hr>
+                        <div class="summary-row">
+                            <span data-lang="subtotal">Subtotal</span>
+                            <span>$390.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span data-lang="shipping">Shipping</span>
+                            <span>$10.00</span>
+                        </div>
+                        <div class="summary-total">
+                            <span data-lang="total">Total</span>
+                            <span>$400.00</span>
+                        </div>
+                        <button type="submit" form="checkout-form" class="btn btn-primary btn-block" data-lang="place_order">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
