@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunFlex - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="products.html" class="active" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="products_title">Our Products</h1>
+                <p data-lang="products_subtitle">Find your perfect pair from our wide selection.</p>
+            </div>
+        </section>
+
+        <section class="products-page-section">
+            <div class="container products-layout">
+                <aside class="filters-sidebar">
+                    <h3 data-lang="filters">Filters</h3>
+
+                    <div class="filter-group">
+                        <h4 data-lang="category">Category</h4>
+                        <ul class="filter-list">
+                            <li><label><input type="checkbox" name="category" value="running"> <span data-lang="cat_running">Running</span></label></li>
+                            <li><label><input type="checkbox" name="category" value="football"> <span data-lang="cat_football">Football</span></label></li>
+                            <li><label><input type="checkbox" name="category" value="tennis"> <span data-lang="cat_tennis">Tennis</span></label></li>
+                            <li><label><input type="checkbox" name="category" value="basketball"> <span data-lang="cat_basketball">Basketball</span></label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 data-lang="price_range">Price Range</h4>
+                        <input type="range" min="50" max="300" value="300" class="price-slider">
+                        <span class="price-value">$50 - $300</span>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 data-lang="size">Size</h4>
+                        <div class="size-selector">
+                            <span>7</span><span>8</span><span class="active">9</span><span>10</span><span>11</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="products-grid-container">
+                    <div class="product-grid">
+                        <div class="product-card" data-id="p1" data-name="FlexStride 3" data-price="120" data-category="running" data-image="images/shoe1.png">
+                            <img src="images/shoe1.png" alt="Running Shoe 1" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">FlexStride 3</h3>
+                            <p class="product-category" data-lang="cat_running">Running</p>
+                            <p class="product-price">$120.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="p2" data-name="Trail Blazer" data-price="150" data-category="trail" data-image="images/shoe2.png">
+                            <img src="images/shoe2.png" alt="Running Shoe 2" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">Trail Blazer</h3>
+                            <p class="product-category" data-lang="cat_trail">Trail</p>
+                            <p class="product-price">$150.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="p3" data-name="GoalMaster Pro" data-price="180" data-category="football" data-image="images/shoe3.png">
+                            <img src="images/shoe3.png" alt="Football Shoe" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">GoalMaster Pro</h3>
+                            <p class="product-category" data-lang="cat_football">Football</p>
+                            <p class="product-price">$180.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="p4" data-name="Court Ace" data-price="135" data-category="tennis" data-image="images/shoe4.png">
+                            <img src="images/shoe4.png" alt="Tennis Shoe" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">Court Ace</h3>
+                            <p class="product-category" data-lang="cat_tennis">Tennis</p>
+                            <p class="product-price">$135.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-id="p5" data-name="Sky Dunker" data-price="190" data-category="basketball" data-image="images/shoe5.png">
+                            <img src="images/shoe5.png" alt="Basketball Shoe" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">Sky Dunker</h3>
+                            <p class="product-category" data-lang="cat_basketball">Basketball</p>
+                            <p class="product-price">$190.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                         <div class="product-card" data-id="p6" data-name="City Run" data-price="95" data-category="running" data-image="images/shoe6.png">
+                            <img src="images/shoe6.png" alt="Running Shoe 3" style="width:100%; height:auto; background-color:#eee;">
+                            <h3 class="product-name">City Run</h3>
+                            <p class="product-category" data-lang="cat_running">Running</p>
+                            <p class="product-price">$95.00</p>
+                            <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

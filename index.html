@@ -1,243 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leon template one</title>
-    <!--main template css file-->
-    <link rel="stylesheet" href="css/leon.css">
-    <!--render all elements normally-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--font awesome liprary-->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<!--google fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap"
- rel="stylesheet">
-
-
+    <title>RunFlex - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
 </head>
 <body>
-    <!--header*/-->
-    <div class="header">
+
+    <header>
         <div class="container">
-            <img class="logo" src="images/depositphotos_183178416-stock-illustration-letters-logo-initial-logo-identity.jpg" alt="">
-            <div class="links">
-                <span class="icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-                <ul>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-lang="home">Home</a></li>
+                    <li><a href="products.html" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact Us</a></li>
                 </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
             </div>
         </div>
-    </div>
-    <!--landing-->
-    <div class="landing">
-        <div class="intro-text">
-            <h1>hello there</h1>
-            <p>We Are Leon - super creative & Minimal 
-                 Agency Web Template </p>
-        </div>
-    </div>
-    <!--features-->
-    <div class="features">
-        <div class="container">
-           <div class="feat">
-           <i class="fa-solid fa-wand-magic-sparkles"></i>
-           <h3>Tell Us Your Idia</h3>
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing
-             elit. Voluptatem fugit voluptatibus mollitia aut dicta est
-              veniam quia, laboriosam animi sequi, nulla
-             voluptas eaque voluptatum porro eum neque alias rerum itaque?</p>
-            </div>
-            <div class="feat">
-              <i class="fa-regular fa-gem"></i>
-              <h3>we will do all the work</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing eli
-                t. Aut fugiat natus maxime ullam, quasi officiis tempora
-                nihil possimus facilis, aliquam fuga! Ipsum officia 
-                incidunt modi maiores excepturi iste et nesciunt!</p>
-            </div>
-            <div class="feat">
-                <i class="fa-solid fa-earth-europe"></i>
-                <h3>your prodactis world wide</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. Voluptates harum, nisi natus,
-                     asperiores cum doloribus dignissimos modi enim esse 
-                     impedit delectus praesentium. Non numquam, 
-                     ipsum consequatur repellat aspernatur veritatis.</p>
-            </div>
-        </div>
-    </div>
-    <!--services-->
-    <div class="services" id="services">
-        <div class="container">
-            <h2 class="special-heading">services</h2>
-            <p>don't be busy, be broductive</p>
-            <div class="services-content"> <!--start services-->
-                <div class="col">
-                
-                    <!--start services-->
-                    <div class="srv">
-                    <i class="fas fa-palette fa-2x"></i>
-                    <div class="text">
-                        <h3>Graphic Design</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                             adipisicing elit. Vero molestias quasi
-                              architecto labore. Odit illo unde sapiente, quas dolorum quam nam omnis delectus
-                             exercitationem perferendis mollitia repellat maiores cum quos!</p>
-                    </div>
-                    </div>
-                
-                     <!--end services-->
-                    <!--start services-->
-                    <div class="srv">
-                    <i class="fab fa-sketch fa-2x"></i>
-                    <div class="text">
-                        <h3>UI & UX </h3>
-                        <p>Lorem yi ux ipsum, dolor sit amet consectetur
-                             adipisicing elit. Vero molestias quasi
-                              architecto labore. Odit illo unde sapiente, quas dolorum quam nam omnis delectus
-                             exercitationem perferendis mollitia repellat maiores cum quos!</p>
-                    </div>
-                    </div>
-                     <!--end services-->
-                </div>  
-                <div class="col">
-                    <!--start services-->
-                    <div class="srv">
-                    <i class="fas fa-vector-square fa-2x"></i>
-                    <div class="text">
-                        <h3>Web Design</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                             adipisicing elit. Vero molestias quasi
-                              architecto labore. Odit illo unde sapiente, quas dolorum quam nam omnis delectus
-                             exercitationem perferendis mollitia repellat maiores cum quos!</p>
-                    </div>
-                    </div>
-                     <!--end services-->
-                    <!--start services-->
-                    <div class="srv">
-                    <i class="fas fa-pencil-ruler fa-2x"></i>
-                    <div class="text">
-                        <h3>Web Dovelopment </h3>
-                        <p>Lorem yi ux ipsum, dolor sit amet consectetur
-                             adipisicing elit. Vero molestias quasi
-                              architecto labore. Odit illo unde sapiente, quas dolorum quam nam omnis delectus
-                             exercitationem perferendis mollitia repellat maiores cum quos!</p>
-                    </div>
-                    </div>
-          </div>
-          <div class="col">
-            <div class="image image-column">
-                <img src="images/ama-dablam2-most-beautiful-mountains-in-the-world-1024x683.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--portfoio-->
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="special-heading">portfolio</h2>
-            <p>If you do it right, it will last forever</p>
-            <div class="portfolio-content">
-              <div class="card">
-                <img src="images/project-manager-works-updates-tasks-260nw-2508630707.jpg" alt="">
-                <div class="info">
-                    <h3>project here</h3>
-                    <p>project here Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit. 
-                         Perferendis assumenda 
-                         aliquid nam recusandae, natus 
-                         deleniti quas
-                          dolorum laboriosam a exercitationem labore delectus!
-                         Nihil suscipit blanditiis magnam iure repellendus quaerat quos.</p>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-lang="hero_title">Run with Confidence, Run with Freedom</h1>
+                    <p data-lang="hero_subtitle">Find the perfect shoes to power your journey.</p>
+                    <a href="products.html" class="btn btn-primary" data-lang="shop_now">Shop Now</a>
                 </div>
-              </div>
-              <div class="card">
-                <img src="images/palinsesto.jpg" alt="">
-                <div class="info">
-                    <h3>project here</h3>
-                    <p>project here Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit.
-                          Perferendis assumenda 
-                         aliquid nam recusandae,
-                          natus deleniti quas
-                          dolorum laboriosam a 
-                          exercitationem labore delectus!
-                         Nihil suscipit blanditiis
-                          magnam iure repellendus quaerat quos.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="images/myfgd6.jpg" alt="">
-                <div class="info">
-                    <h3>project here</h3>
-                    <p>project here Lorem ipsum dolor sit amet
-                         consectetur adipisicing
-                          elit. Perferendis assumenda 
-                         aliquid nam recusandae, natus deleniti quas
-                          dolorum laboriosam a exercitationem labore delectus!
-                         Nihil suscipit blanditiis 
-                         magnam iure repellendus quaerat quos.</p>
-                </div>
-              </div>
             </div>
-        </div>
-    </div>
-    <div class="about" id="about">
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title" data-lang="best_sellers">Best Sellers</h2>
+                <div class="product-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card" data-id="p1" data-name="FlexStride 3" data-price="120.00" data-image="images/shoe1.png">
+                        <img src="images/shoe1.png" alt="Running Shoe 1" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 class="product-name">FlexStride 3</h3>
+                        <p class="product-category" data-lang="cat_running">Running</p>
+                        <p class="product-price">$120.00</p>
+                        <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card" data-id="p2" data-name="Trail Blazer" data-price="150.00" data-image="images/shoe2.png">
+                        <img src="images/shoe2.png" alt="Running Shoe 2" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 class="product-name">Trail Blazer</h3>
+                        <p class="product-category" data-lang="cat_trail">Trail</p>
+                        <p class="product-price">$150.00</p>
+                        <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card" data-id="p3" data-name="GoalMaster Pro" data-price="180.00" data-image="images/shoe3.png">
+                        <img src="images/shoe3.png" alt="Football Shoe" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 class="product-name">GoalMaster Pro</h3>
+                        <p class="product-category" data-lang="cat_football">Football</p>
+                        <p class="product-price">$180.00</p>
+                        <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card" data-id="p4" data-name="Court Ace" data-price="135.00" data-image="images/shoe4.png">
+                        <img src="images/shoe4.png" alt="Tennis Shoe" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 class="product-name">Court Ace</h3>
+                        <p class="product-category" data-lang="cat_tennis">Tennis</p>
+                        <p class="product-price">$135.00</p>
+                        <button class="btn add-to-cart-btn" data-lang="add_to_cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title" data-lang="shop_by_category">Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="images/cat_running.jpg" alt="Running" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 data-lang="cat_running">Running</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/cat_football.jpg" alt="Football" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 data-lang="cat_football">Football</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/cat_tennis.jpg" alt="Tennis" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 data-lang="cat_tennis">Tennis</h3>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/cat_basketball.jpg" alt="Basketball" style="width:100%; height:auto; background-color:#eee;">
+                        <h3 data-lang="cat_basketball">Basketball</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="brands">
+            <div class="container">
+                <h2 class="section-title" data-lang="featured_brands">Featured Brands</h2>
+                <div class="brands-logos">
+                    <!-- In a real scenario, these would be logos -->
+                    <span>Brand A</span>
+                    <span>Brand B</span>
+                    <span>Brand C</span>
+                    <span>Brand D</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <div class="container">
+                <h2 data-lang="cta_title">Ready to Find Your Sole Mate?</h2>
+                <p data-lang="cta_subtitle">Explore our full collection and step up your game.</p>
+                <a href="products.html" class="btn btn-secondary" data-lang="explore_collection">Explore Collection</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            <h2 class="special-heading">about</h2>
-            <p>liss is more work</p>
-            <div class="about-content">
-                <div class="image">
-                    <img src="images/81EOCZD4JXL.jpg" alt="">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
                 </div>
-             <div class="text">
-                <p>Lorem ipsum dolor sit am
-                    et consectetur adipisicing elit. Magnam laudantium
-                     voluptatem quibusdam esse possimus, numquam tenetur.
-                      Molestiae perspiciatis ex voluptatibus
-                     voluptate nam. Velit debitis asperiores sit itaque adipisci
-                     ex voluptatibus.</p>
-                     <hr>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-                         consequuntur vel officia minima in nam a voluptatem, quae eaque, maiores
-                          ratione soluta itaque eligendi corporis? Dolores
-                         accusamus tenetur eos non!</p>
-             </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--contact-->
-    <div class="contact">
-        <div class="container">
-         <h2 class="special-heading">contact</h2>
-        <p>we are bron to create</p>
-        <div class="info">
-            <p class="label"> feel free to drop us a line at:</p>
-            <a href="mailto:leonagency@mail.com?supject=contact" class="link" >leonagency@mail.com</a>
-            <div class="social">
-             find us on socioal networks
-             <i class="fab fa-youtube"></i> 
-             <i class="fab fa-facebook-f"></i>
-             <i class="fab fa-twitter"></i>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!--footer-->
-    <div class="footer">
-        &copy;2021 <span>leon</span> all right reserved
-    </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

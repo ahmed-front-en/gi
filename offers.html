@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunFlex - Special Offers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="products.html" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" class="active" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="special_offers">Special Offers</h1>
+                <p data-lang="offers_subtitle">Don't miss out on our exclusive deals!</p>
+            </div>
+        </section>
+
+        <section class="deal-of-the-day">
+            <div class="container">
+                <h2 class="section-title" data-lang="deal_of_the_day">Deal of the Day</h2>
+                <div class="deal-layout">
+                    <div class="deal-image">
+                        <img src="images/deal-shoe.png" alt="Deal of the day shoe" style="background-color:#eee;">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Aero-Runner Pro</h3>
+                        <p class="deal-description" data-lang="deal_desc">Experience the lightest, most responsive run of your life. Limited time offer!</p>
+                        <div class="deal-price">
+                            <span class="original-price">$160.00</span>
+                            <span class="sale-price">$99.99</span>
+                        </div>
+                        <div id="countdown-timer" class="countdown-timer">
+                            <div><span id="days">00</span><sub data-lang="days">Days</sub></div>
+                            <div><span id="hours">00</span><sub data-lang="hours">Hours</sub></div>
+                            <div><span id="minutes">00</span><sub data-lang="minutes">Mins</sub></div>
+                            <div><span id="seconds">00</span><sub data-lang="seconds">Secs</sub></div>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-lang="claim_offer">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coupon-codes">
+            <div class="container">
+                <h2 class="section-title" data-lang="coupon_codes">Coupon Codes</h2>
+                <div class="coupon-grid">
+                    <div class="coupon-card">
+                        <h3 class="coupon-value">15% OFF</h3>
+                        <p class="coupon-desc" data-lang="coupon_desc_1">On all running shoes</p>
+                        <div class="coupon-code-container">
+                            <span class="coupon-code">RUN15</span>
+                            <button class="copy-btn" data-lang="copy">Copy</button>
+                        </div>
+                    </div>
+                    <div class="coupon-card">
+                        <h3 class="coupon-value">$20 OFF</h3>
+                        <p class="coupon-desc" data-lang="coupon_desc_2">On orders over $150</p>
+                         <div class="coupon-code-container">
+                            <span class="coupon-code">SAVE20</span>
+                            <button class="copy-btn" data-lang="copy">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

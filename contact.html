@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunFlex - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- I will add font awesome later for icons -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h2 data-lang="brand_name">RunFlex 👟</h2>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="products.html" data-lang="products">Products</a></li>
+                    <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                    <li><a href="about.html" data-lang="about">About Us</a></li>
+                    <li><a href="contact.html" class="active" data-lang="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="lang-toggle" title="Switch Language">AR</button>
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">🌙</button>
+                 <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    🛒 <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-lang="contact_us_title">Contact Us</h1>
+                <p data-lang="contact_us_subtitle">We'd love to hear from you. Here's how you can reach us.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-form-container">
+                        <h3 data-lang="send_message">Send us a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-lang="your_name">Your Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-lang="your_email">Your Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-lang="your_message">Message</label>
+                                <textarea id="message" name="message" rows="6"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-lang="submit_message">Submit Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-details">
+                        <h3 data-lang="contact_info">Contact Information</h3>
+                        <p data-lang="contact_info_p">Feel free to reach out to us through any of the following methods.</p>
+                        <ul class="contact-info-list">
+                            <li><strong>Email:</strong> support@runflex.com</li>
+                            <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                            <li><strong>Address:</strong> 123 Runner's Lane, Boston, MA 02110, USA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 data-lang="brand_name">RunFlex</h3>
+                    <p data-lang="footer_about">The best place to find your next pair of running shoes. High quality, great prices.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3 data-lang="quick_links">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html" data-lang="products">Products</a></li>
+                        <li><a href="offers.html" data-lang="offers">Offers</a></li>
+                        <li><a href="about.html" data-lang="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3 data-lang="newsletter_title">Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Your email address..." data-lang-placeholder="newsletter_placeholder">
+                        <button type="submit" class="btn" data-lang="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RunFlex. All Rights Reserved.</p>
+                <div class="social-links">
+                    <!-- Social media icons will be added here -->
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Twitter">TW</a>
+                    <a href="#" title="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
